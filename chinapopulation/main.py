@@ -141,7 +141,7 @@ def create_fig(data: list[list[int]]):
     fig.update_yaxes(title_text="人口（万）")
     fig.update_layout(title_text="中国人口", showlegend=True)
 
-    fig.write_html("chinapopulation.html")
+    fig.write_html("chinapopulation.html", include_plotlyjs="cdn")
 
 
 if __name__ == "__main__":
